@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md Mujtaba | Java • Spring Boot • Microservices • AWS</title>
+  <meta name="description" content="Portfolio of Md Mujtaba - Java, Spring Boot, Microservices, AWS Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+          <span class="brand-logo" aria-hidden="true">⌘</span>
+          <span class="brand-text">NexaTech Solutions</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav">
+          <a href="index.html" class="nav-link active">Home</a><a href="about.html" class="nav-link">About</a><a href="projects.html" class="nav-link">Projects</a><a href="services.html" class="nav-link">Services</a><a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+    
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="headline"><span class="accent">Your Business.<br> Our Technology.</span></h1>
+          <p class="subhead">End-to-End Software Solution Provider — delivering robust <strong>Web and Mobile applications</strong> tailored for businesses across diverse sectors including <strong>Education</strong>, <strong>Healthcare</strong>, <strong>Retail</strong>, <strong>Finance</strong>, and <strong>more</strong> .</p>
+          <div class="cta-row">
+            <!-- <a class="btn btn-primary" href="assets/company_profile.pdf" download>Service Brochure</a> -->
+            <a class="btn btn-primary" href="contact.html">Request a Demo</a>
+          </div>
+          
+          <ul class="tech-list">
+            <li>📱 Web & Mobile App Development</li>
+        <li>⚡ Scalable & High-Performance Systems</li>
+        <li>🔗 Seamless System Integrations</li>
+        <li>☁️ Cloud-Ready & Secure Applications</li>
+        <li>📊 Smart Data Management & Reporting</li>
+        <li>🤝 End-to-End Project Delivery</li>
+        <li>🛠️ Ongoing Maintenance & Support</li>
+          </ul>
+        </div>
+        <div class="intro-image">
+          <img src="assets/images/homedev.jpg" alt="Intro Image">
+        </div>
+      </div>
+    </section>
+    
+    <div style="margin-top: 1rem; text-align: center;">
+  <button class="btn btn-outline" id="callbackBtn">📞 Request a Callback</button>
+</div>
+
+<div id="callbackModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:#fff; padding:2rem; border-radius:16px; width:90%; max-width:420px; position:relative; box-shadow:0 8px 20px rgba(0,0,0,0.25); font-family: 'Segoe UI', Tahoma, sans-serif;">
+    
+    <!-- Close Button -->
+    <button id="closeModal" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:20px; cursor:pointer; color:#888;">✖</button>
+    
+    <!-- Popup Heading -->
+    <h2 style="text-align:center; font-size:1.8rem; font-weight:700; color:#222; margin-bottom:1rem;">
+      📞 Request a <span style="color:#0077ff;">Callback</span>
+    </h2>
+    <p style="text-align:center; font-size:0.95rem; color:#555; margin-bottom:1.5rem;">
+      Leave your details and our team will connect with you at your preferred time.
+    </p>
+
+    <!-- Callback Form -->
+    <form id="callbackForm" action="https://formsubmit.co/hussainmdmujtaba695@gmail.com" method="POST">
+  <!-- Hidden fields -->
+  <input type="hidden" name="_subject" value="📞 Callback Request">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <label>
+    <span>Name</span>
+    <input type="text" name="name" placeholder="Your name" required />
+  </label>
+
+  <label>
+    <span>Mobile</span>
+    <input type="tel" name="mobile" placeholder="+91 98xxxxxxxx" pattern="[0-9]{10}" required />
+  </label>
+
+  <label>
+    <span>Preferred Time</span>
+    <input type="text" name="preferred_time" placeholder="e.g. 10:00 AM - 1:00 PM" required />
+  </label>
+
+  <button type="submit" class="btn btn-primary">Submit Request</button>
+</form>
+
+    <!-- Confirmation Message -->
+    <p id="callbackConfirmation" style="display:none; text-align:center; color:green; font-weight:bold; margin-top:1rem; font-size:1rem;">
+      ✅ Thank you! We will call you back soon.
+    </p>
+  </div>
+</div>
+
+<script>
+  // Open modal
+  document.getElementById("callbackBtn").addEventListener("click", function() {
+    document.getElementById("callbackModal").style.display = "flex";
+  });
+
+  // Close modal
+  document.getElementById("closeModal").addEventListener("click", function() {
+    document.getElementById("callbackModal").style.display = "none";
+  });
+
+  // Handle form submission
+  document.getElementById("callbackForm").addEventListener("submit", function(e){
+    // e.preventDefault(); // prevent page reload
+    document.getElementById("callbackConfirmation").style.display = "block";
+    // this.reset(); // clear form
+    setTimeout(() => {
+      document.getElementById("callbackModal").style.display = "none";
+      document.getElementById("callbackConfirmation").style.display = "none";
+    }, 3000); // close after 3s
+  });
+</script>
+
+    <section class="section container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="card-grid">
+        <a class="card" href="projects.html#asset-mgmt">
+          <div class="card-media"><img src="assets/images/businessport.jpg" alt="Asset Management System" /></div>
+          <div class="card-body">
+            <h3>Business Portfolios</h3>
+            <p>Build your professional presence with elegant, modern, and fully customized digital portfolios that showcase your brand and services. Perfect for entrepreneurs and growing businesses.</p>
+          </div>
+        </a>
+        <a class="card" href="projects.html#ecommerce">
+          <div class="card-media"><img src="assets/images/fooddiet.png" alt="E-commerce Microservices" /></div>
+          <div class="card-body">
+            <h3>Diet & Nutrition Plans</h3>
+            <p>Personalized diet and nutrition tracking apps to help your clients achieve their health goals — complete with meal planners, calorie tracking, and progress reports.</p>
+          </div>
+        </a>
+        <a class="card" href="projects.html#reporting">
+          <div class="card-media"><img src="assets/images/reporting.jpg" alt="Reporting & Analytics" /></div>
+          <div class="card-body">
+            <h3>Reporting & Analytics</h3>
+            <p>Get insightful dashboards and real-time reports to track performance, make data-driven decisions, and grow your business with confidence.</p>
+          </div>
+        </a>
+      </div>
+      <div class="center mt-24">
+        <a class="btn btn-outline" href="projects.html">See all projects</a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title">Services</h2>
+      <div class="feature-grid">
+
+
+        <div class="price-card featured">
+          <h3>Business Portfolio</h3>
+          <p>◆ In today’s competitive market, every business—whether small, growing, or established—needs a professional portfolio to stand out. A well-crafted portfolio is not just a document; it’s your brand story, your credibility, and your first impression to clients, investors, and partners.
+<br><br><i style="color:aquamarine;">◆ I help businesses create impactful and visually appealing portfolios that highlight their strengths, achievements, and services.</i></p>
+          <div class="price">Starts from ₹5,000</div>
+        </div>
+        <div class="price-card">
+          <h3>Custom Business Solutions</h3>
+          <p>◆ We design and deliver complete web and mobile applications tailored to your unique business needs. Whether it’s for schools, shops, healthcare, or enterprises — our solutions are built to save time, reduce manual work, and boost growth.</p>
+          <div class="price">Starts from ₹60,000</div>
+        </div>
+        <div class="price-card">
+          <h3>Smart Data Management</h3>
+          <p>◆ Your data is your biggest asset. We help you store, organize, and optimize it so you can make smarter decisions. From managing student records to tracking sales or handling patient data — our systems keep everything accurate, secure, and easy to access.</p>
+          <div class="price">Starts from ₹35,000</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <h2>Have a project in mind?</h2>
+        <p>Let’s turn it into a clean, scalable, production-ready solution.</p>
+        <a class="btn btn-primary" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+  </main>
+  
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>NexaTech Solutions</h4>
+          <p><i>Your trusted partner for Web & Mobile app development</i></p>
+          <p class="muted">Based in Noida, India</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hussainmdmujtaba695@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Mujtaba," 
+            target="_blank" rel="noopener" style="text-decoration: none">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/md-mujtaba-hussain-472993192" target="_blank" rel="noopener" style="text-decoration: none">LinkedIn</a></li>
+            <li><a href="https://github.com/your-github" target="_blank" rel="noopener" style="text-decoration: none">GitHub</a></li>
+            <li><a href="https://wa.me/917978558021" target="_blank" rel="noopener" style="text-decoration: none">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Downloads</h4>
+          <a class="btn btn-outline" href="assets/company_profile.pdf" download>Service Brochure</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> NexaTech Solutions. All rights reserved.</small>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>

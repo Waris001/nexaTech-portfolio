@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Md Mujtaba | Java • Spring Boot • Microservices • AWS</title>
+  <meta name="description" content="Contact Md Mujtaba for Java/Spring Boot/Microservices projects" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+          <span class="brand-logo" aria-hidden="true">⌘</span>
+          <span class="brand-text">NexaTech Solutions</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav">
+          <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="projects.html" class="nav-link">Projects</a><a href="services.html" class="nav-link">Services</a><a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+      </div>
+    </header>
+    
+  <main>
+    <section class="section container narrow">
+      <h1 class="page-title">Get in Touch</h1>
+      <p class="lead">Want to collaborate ? Drop a message and I’ll get back within 24 hours.</p>
+      <form class="contact-form" action="https://formsubmit.co/hussainmdmujtaba695@gmail.com" method="POST">
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Mobile</span>
+            <input type="tel" name="mobile" placeholder="+91 98xxxxxxxx" pattern="[0-9]{10}" required />
+          </label>
+          <label class="full">
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </label>
+        </div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <div class="contact-alt">
+          <p>Prefer direct?</p>
+          <ul>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hussainmdmujtaba695@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Mujtaba," 
+            target="_blank" rel="noopener" style="text-decoration: none">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/md-mujtaba-hussain-472993192" target="_blank" rel="noopener" style="text-decoration: none">LinkedIn</a></li>
+            <li><a href="https://github.com/your-github" target="_blank" rel="noopener" style="text-decoration: none">GitHub</a></li>
+            <li><a href="https://wa.me/917978558021" target="_blank" rel="noopener" style="text-decoration: none">WhatsApp</a></li>
+          </ul>
+        </div>
+      </form>
+      <p id="confirmation" style="display:none; color:green; font-weight:bold;">
+  ✅ Thank you! Your message has been sent.
+</p>
+<div style="margin-top: 2rem;">
+    <h2>📍 My Location</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3504.556882218916!2d77.34349867549784!3d28.55303587570832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzEwLjkiTiA3N8KwMjAnNDUuOSJF!5e0!3m2!1sen!2sin!4v1756093646825!5m2!1sen!2sin"
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault(); // stop page reload
+    document.getElementById("confirmation").style.display = "block";
+    this.reset(); // clear the form
+  });
+</script>
+
+<div style="margin-top: 1rem; text-align: center;">
+  <button class="btn btn-outline" id="callbackBtn">📞 Request a Callback</button>
+</div>
+
+<div id="callbackModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:#fff; padding:2rem; border-radius:16px; width:90%; max-width:420px; position:relative; box-shadow:0 8px 20px rgba(0,0,0,0.25); font-family: 'Segoe UI', Tahoma, sans-serif;">
+    
+    <!-- Close Button -->
+    <button id="closeModal" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:20px; cursor:pointer; color:#888;">✖</button>
+    
+    <!-- Popup Heading -->
+    <h2 style="text-align:center; font-size:1.8rem; font-weight:700; color:#222; margin-bottom:1rem;">
+      📞 Request a <span style="color:#0077ff;">Callback</span>
+    </h2>
+    <p style="text-align:center; font-size:0.95rem; color:#555; margin-bottom:1.5rem;">
+      Leave your details and our team will connect with you at your preferred time.
+    </p>
+
+    <!-- Callback Form -->
+    <form id="callbackForm" action="https://formsubmit.co/hussainmdmujtaba695@gmail.com" method="POST">
+  <!-- Hidden fields -->
+  <input type="hidden" name="_subject" value="📞 Callback Request">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <label>
+    <span>Name</span>
+    <input type="text" name="name" placeholder="Your name" required />
+  </label>
+
+  <label>
+    <span>Mobile</span>
+    <input type="tel" name="mobile" placeholder="+91 98xxxxxxxx" pattern="[0-9]{10}" required />
+  </label>
+
+  <label>
+    <span>Preferred Time</span>
+    <input type="text" name="preferred_time" placeholder="e.g. 10:00 AM - 1:00 PM" required />
+  </label>
+
+  <button type="submit" class="btn btn-primary">Submit Request</button>
+</form>
+
+    <!-- Confirmation Message -->
+    <p id="callbackConfirmation" style="display:none; text-align:center; color:green; font-weight:bold; margin-top:1rem; font-size:1rem;">
+      ✅ Thank you! We will call you back soon.
+    </p>
+  </div>
+</div>
+
+<script>
+  // Open modal
+  document.getElementById("callbackBtn").addEventListener("click", function() {
+    document.getElementById("callbackModal").style.display = "flex";
+  });
+
+  // Close modal
+  document.getElementById("closeModal").addEventListener("click", function() {
+    document.getElementById("callbackModal").style.display = "none";
+  });
+
+  // Handle form submission
+  document.getElementById("callbackForm").addEventListener("submit", function(e){
+    // e.preventDefault(); // prevent page reload
+    document.getElementById("callbackConfirmation").style.display = "block";
+    // this.reset(); // clear form
+    setTimeout(() => {
+      document.getElementById("callbackModal").style.display = "none";
+      document.getElementById("callbackConfirmation").style.display = "none";
+    }, 3000); // close after 3s
+  });
+</script>
+    </section>
+  </main>
+  
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>NexaTech Solutions</h4>
+          <p><i>Your trusted partner for Web & Mobile app development</i></p>
+          <p class="muted">Based in Noida, India</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hussainmdmujtaba695@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Mujtaba," 
+            target="_blank" rel="noopener" style="text-decoration: none">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/md-mujtaba-hussain-472993192" target="_blank" rel="noopener" style="text-decoration: none">LinkedIn</a></li>
+            <li><a href="https://github.com/your-github" target="_blank" rel="noopener" style="text-decoration: none">GitHub</a></li>
+            <li><a href="https://wa.me/917978558021" target="_blank" rel="noopener" style="text-decoration: none">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Downloads</h4>
+          <a class="btn btn-outline" href="assets/company_profile.pdf" download>Service Brochure</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> NexaTech Solutions. All rights reserved.</small>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
