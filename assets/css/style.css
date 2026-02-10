@@ -26,7 +26,7 @@ img{max-width:100%;display:block}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(6,11,22,.8);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
 .nav-wrapper{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .brand{display:inline-flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
-.brand-logo{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent));box-shadow:0 8px 20px rgba(34,211,238,.25)}
+.brand-logo{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--bg),var(--bg));}
 .brand-text{font-weight:700}
 .site-nav{display:flex;gap:14px}
 .nav-link{color:var(--muted);text-decoration:none;padding:10px 14px;border-radius:12px;transition:all .2s}
@@ -148,8 +148,23 @@ input:focus, textarea:focus{outline:2px solid var(--accent);box-shadow:0 0 0 6px
       display: flex !important;
   flex-direction: column !important;
   }
-
+.dim {
+  color: #5d2727; /* Makes entered text black (bright & readable) */
+}
   
 
 .fade{opacity:0;transform:translateY(10px);transition:all .6s cubic-bezier(.2,.6,.2,1)}
 .fade.in{opacity:1;transform:none}
+
+@media (max-width: 620px) {
+  .container {
+    padding: 0 12px; /* adds breathing space on mobile */
+  }
+}
+
+@media (max-width: 620px) {
+  .card-grid, .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px; /* space between cards */
+  }
+}
