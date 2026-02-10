@@ -38,7 +38,7 @@
     <section class="section container narrow">
       <h1 class="page-title">Get in Touch</h1>
       <p class="lead">Need a custom application or website? Drop a message and we’ll get back to you within 24 hours.</p>
-      <form class="contact-form" action="https://formsubmit.co/hussainmdmujtaba695@gmail.com" method="POST">
+      <form id="contactForm" class="contact-form" action="https://formsubmit.co/hussainmdmujtaba695@gmail.com" method="POST">
         <div class="form-grid">
           <label>
             <span>Name</span>
@@ -85,11 +85,20 @@
     </iframe>
   </div>
 <script>
-  document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault(); // stop page reload
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  fetch(this.action, {
+    method: "POST",
+    body: new FormData(this),
+    headers: { 'Accept': 'application/json' }
+  }).then(() => {
     document.getElementById("confirmation").style.display = "block";
-    this.reset(); // clear the form
+    this.reset();
+  }).catch(() => {
+    alert("Something went wrong. Please try again.");
   });
+});
 </script>
 
 <div style="margin-top: 1rem; text-align: center;">
