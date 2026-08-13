@@ -1,208 +1,1507 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nexatech IT Solutions | IT Services & Software Development</title>
-  <meta name="description" content="Nexatech IT Solutions offers IT consulting, software development, web & mobile app development, cloud solutions, and digital transformation services.">
-  <meta name="keywords" content="Nexatech IT Solutions, Software Development, IT Consulting, Web Development, Mobile Apps, Cloud Solutions, Digital Transformation">
-  <meta name="author" content="Nexatech IT Solutions">
-  <meta name="robots" content="contact, follow">
-  <link rel="canonical" href="https://nexatechitsolutions.com/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/png" href="assets/images/NEXA_Tech_logo.png">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexatech IT Solutions | IT Services & Software Development</title>
+    <meta name="description" content="Nexatech IT Solutions offers IT consulting, software development, web & mobile app development, cloud solutions, and digital transformation services.">
+    <meta name="keywords" content="Nexatech IT Solutions, Software Development, IT Consulting, Web Development, Mobile Apps, Cloud Solutions, Digital Transformation">
+    <meta name="author" content="Nexatech IT Solutions">
+    <meta name="robots" content="contact, follow">
+    <link rel="canonical" href="https://nexatechitsolutions.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/NEXA_Tech_logo.png">
+
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a href="index.html" class="brand">
-          <!-- <span class="brand-logo" aria-hidden="true">𝓝</span> -->
-           <img 
-  src="assets/images/NEXA_Tech_logo.png" 
-  alt="NexaSchool Logo" 
-  class="brand-logo" 
-/>
-          <span class="brand-text">NexaTech IT Solutions</span>
-        </a>
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-        <nav class="site-nav">
-          <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="projects.html" class="nav-link">Projects</a><a href="services.html" class="nav-link">Services</a><a href="contact.html" class="nav-link active">Contact</a>
+    <!-- =========================
+     HEADER
+========================= -->
+<header id="header" class="site-header">
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand company-logo">
+
+                <!-- OPTION 1: Image Logo -->
+                <img src="assets/images/NEXA_Tech_logo.png"
+                     alt="Your Company Logo"
+                     class="logo-img">
+
+                <!-- OPTION 2: Text Logo
+                <span class="logo-text">
+                    Nexa<span>Tech.</span>
+                </span>
+                -->
+                <span class="company-name">
+                    Nexa<span>Tech IT</span>
+                </span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+
+                            Solutions
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    School Management System
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Hospital Management System
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Business Management Software
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Custom Software Solutions
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Cloud Solutions
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+
+                            Services
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Website Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Web Applications
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Mobile Applications
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    API & System Integration
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Cloud & Hosting
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    IT Support
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="industries.html">
+                            Industries
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">
+                            Products
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- CTA -->
+                <a href="contact.html" class="header-btn">
+                    Get Started
+                </a>
+
+            </div>
+
         </nav>
-      </div>
-    </header>
-    
-  <main>
-    <section class="section container narrow">
-      <h1 class="page-title">Get in Touch</h1>
-      <p class="lead">Need a custom application or website? Drop a message and we’ll get back to you within 24 hours.</p>
-      <form id="contactForm" class="contact-form" action="https://formsubmit.co/hussainmdmujtaba695@gmail.com" method="POST">
-        <div class="form-grid">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
-          <label>
-            <span>Mobile</span>
-            <input type="tel" name="mobile" placeholder="+91 98xxxxxxxx" pattern="[0-9]{10}" required />
-          </label>
-          <label class="full">
-            <span>Message</span>
-            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
-          </label>
+
+    </div>
+
+</header>
+
+<!-- =========================================================
+     CONTACT PAGE
+========================================================= -->
+
+<main class="contact-page">
+
+    <!-- =====================================================
+         CONTACT HERO
+    ====================================================== -->
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="contact-hero-content">
+
+                <span class="contact-eyebrow">
+                    <i class="bi bi-chat-dots"></i>
+                    Let's Work Together
+                </span>
+
+                <h1>
+                    Let's Build Something
+                    <span>Great Together.</span>
+                </h1>
+
+                <p>
+                    Have a project, business idea or digital challenge?
+                    Tell us what you need and our team will help you find
+                    the right technology solution.
+                </p>
+
+                <div class="contact-hero-buttons">
+
+                    <a href="#contact-form" class="contact-primary-btn">
+                        Start a Conversation
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="tel:+91XXXXXXXXXX" class="contact-outline-btn">
+                        <i class="bi bi-telephone"></i>
+                        Call Us
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-        <button class="btn btn-primary" type="submit">Send Message</button>
-        <div class="contact-alt">
-          <p>Prefer direct?</p>
-          <ul>
-            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hussainmdmujtaba695@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Mujtaba," 
-            target="_blank" rel="noopener" style="text-decoration: none">Email Me</a></li>
-            <li><a href="https://www.linkedin.com/in/md-mujtaba-hussain-472993192" target="_blank" rel="noopener" style="text-decoration: none">LinkedIn</a></li>
-            <li><a href="https://github.com/your-github" target="_blank" rel="noopener" style="text-decoration: none">GitHub</a></li>
-            <li><a href="https://wa.me/917978558021" target="_blank" rel="noopener" style="text-decoration: none">WhatsApp</a></li>
-          </ul>
-        </div>
-      </form>
-      <p id="confirmation" style="display:none; color:green; font-weight:bold;">
-  ✅ Thank you! Your message has been sent.
-</p>
-<div style="margin-top: 2rem;">
-    <h2>📍 My Location</h2>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3504.556882218916!2d77.34349867549784!3d28.55303587570832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzEwLjkiTiA3N8KwMjAnNDUuOSJF!5e0!3m2!1sen!2sin!4v1756093646825!5m2!1sen!2sin"
-      width="100%" 
-      height="350" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  fetch(this.action, {
-    method: "POST",
-    body: new FormData(this),
-    headers: { 'Accept': 'application/json' }
-  }).then(() => {
-    document.getElementById("confirmation").style.display = "block";
-    this.reset();
-  }).catch(() => {
-    alert("Something went wrong. Please try again.");
-  });
-});
-</script>
-
-<div style="margin-top: 1rem; text-align: center;">
-  <button class="btn btn-outline" id="callbackBtn">📞 Request a Callback</button>
-</div>
-
-<div id="callbackModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:1000;">
-  <div style="background:#fff; padding:2rem; border-radius:16px; width:90%; max-width:420px; position:relative; box-shadow:0 8px 20px rgba(0,0,0,0.25); font-family: 'Segoe UI', Tahoma, sans-serif;">
-    
-    <!-- Close Button -->
-    <button id="closeModal" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:20px; cursor:pointer; color:#888;">✖</button>
-    
-    <!-- Popup Heading -->
-    <h2 style="text-align:center; font-size:1.8rem; font-weight:700; color:#222; margin-bottom:1rem;">
-      📞 Request a <span style="color:#0077ff;">Callback</span>
-    </h2>
-    <p style="text-align:center; font-size:0.95rem; color:#555; margin-bottom:1.5rem;">
-      Leave your details and our team will connect with you at your preferred time.
-    </p>
-
-    <!-- Callback Form -->
-    <form id="callbackForm" action="https://formsubmit.co/hussainmdmujtaba695@gmail.com" method="POST">
-  <!-- Hidden fields -->
-  <input type="hidden" name="_subject" value="📞 Callback Request">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-
-  <label>
-    <span>Name</span>
-    <input class="dim" type="text" name="name" placeholder="Your name" required />
-  </label>
-
-  <label>
-    <span>Mobile</span>
-    <input class="dim" type="tel" name="mobile" placeholder="+91 98xxxxxxxx" pattern="[0-9]{10}" required />
-  </label>
-
-  <label>
-    <span>Preferred Time</span>
-    <input class="dim" type="text" name="preferred_time" placeholder="e.g. 10:00 AM - 1:00 PM" required />
-  </label>
-
-  <button type="submit" class="btn btn-primary">Submit Request</button>
-</form>
-
-    <!-- Confirmation Message -->
-    <p id="callbackConfirmation" style="display:none; text-align:center; color:green; font-weight:bold; margin-top:1rem; font-size:1rem;">
-      ✅ Thank you! We will call you back soon.
-    </p>
-  </div>
-</div>
-
-<script>
-  // Open modal
-  document.getElementById("callbackBtn").addEventListener("click", function() {
-    document.getElementById("callbackModal").style.display = "flex";
-  });
-
-  // Close modal
-  document.getElementById("closeModal").addEventListener("click", function() {
-    document.getElementById("callbackModal").style.display = "none";
-  });
-
-  // Handle form submission
-  document.getElementById("callbackForm").addEventListener("submit", function(e){
-    // e.preventDefault(); // prevent page reload
-    document.getElementById("callbackConfirmation").style.display = "block";
-    // this.reset(); // clear form
-    setTimeout(() => {
-      document.getElementById("callbackModal").style.display = "none";
-      document.getElementById("callbackConfirmation").style.display = "none";
-    }, 3000); // close after 3s
-  });
-</script>
     </section>
-  </main>
-  
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h4>NexaTech IT Solutions</h4>
-          <p><i>Your trusted partner for Web & Mobile app development</i></p>
-          <p class="muted">Based in Noida, India</p>
+
+
+    <!-- =====================================================
+         QUICK CONTACT CARDS
+    ====================================================== -->
+
+    <section class="contact-quick-section">
+
+        <div class="container">
+
+            <div class="contact-quick-grid">
+
+                <!-- Phone -->
+                <div class="contact-quick-card">
+
+                    <div class="contact-quick-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Call Us</span>
+
+                        <h3>
+                            +91 XXXXX XXXXX
+                        </h3>
+
+                        <p>
+                            Mon - Sat, 10 AM - 7 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="contact-quick-card">
+
+                    <div class="contact-quick-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Email Us</span>
+
+                        <h3>
+                            info@yourcompany.com
+                        </h3>
+
+                        <p>
+                            We usually reply within 24 hours
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="contact-quick-card">
+
+                    <div class="contact-quick-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Visit Us</span>
+
+                        <h3>
+                            Your City, India
+                        </h3>
+
+                        <p>
+                            Schedule an office visit
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div>
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hussainmdmujtaba695@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Mujtaba," 
-            target="_blank" rel="noopener" style="text-decoration: none">Email Me</a></li>
-            <li><a href="https://www.linkedin.com/in/md-mujtaba-hussain-472993192" target="_blank" rel="noopener" style="text-decoration: none">LinkedIn</a></li>
-            <li><a href="https://github.com/your-github" target="_blank" rel="noopener" style="text-decoration: none">GitHub</a></li>
-            <li><a href="https://wa.me/917978558021" target="_blank" rel="noopener" style="text-decoration: none">WhatsApp</a></li>
-          </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT FORM + INFO
+    ====================================================== -->
+
+    <section class="contact-main-section">
+
+        <div class="container">
+
+            <div class="contact-main-grid">
+
+
+                <!-- LEFT INFORMATION -->
+                <div class="contact-info-panel">
+
+                    <span class="section-small-title">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>
+                        Tell Us About
+                        <span>Your Project</span>
+                    </h2>
+
+                    <p class="contact-info-description">
+
+                        Whether you need a business website, school
+                        management system, hospital software, cloud
+                        infrastructure or a completely custom solution,
+                        we're here to help.
+
+                    </p>
+
+
+                    <!-- Contact information -->
+
+                    <div class="contact-info-list">
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-info-item-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+
+                            <div>
+
+                                <small>Phone</small>
+
+                                <a href="tel:+91XXXXXXXXXX">
+                                    +91 XXXXX XXXXX
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-info-item-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+
+                            <div>
+
+                                <small>Email</small>
+
+                                <a href="mailto:info@yourcompany.com">
+                                    info@yourcompany.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-info-item-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+
+                            <div>
+
+                                <small>Office</small>
+
+                                <p>
+                                    Your Office Address,<br>
+                                    Your City, India
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WhatsApp -->
+
+                    <a href="https://wa.me/91XXXXXXXXXX"
+                       target="_blank"
+                       class="contact-whatsapp-btn">
+
+                        <span class="whatsapp-icon">
+                            <i class="bi bi-whatsapp"></i>
+                        </span>
+
+                        <span>
+
+                            <small>Prefer WhatsApp?</small>
+
+                            <strong>
+                                Chat With Our Team
+                                <i class="bi bi-arrow-up-right"></i>
+                            </strong>
+
+                        </span>
+
+                    </a>
+
+
+                    <!-- Decorative image -->
+
+                    <div class="contact-info-image">
+
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+                             alt="IT team discussing a project">
+
+                        <div class="contact-image-overlay">
+
+                            <i class="bi bi-stars"></i>
+
+                            <span>
+                                Turning ideas into
+                                digital solutions.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT FORM -->
+                <div class="contact-form-wrapper"
+                     id="contact-form">
+
+                    <div class="contact-form-header">
+
+                        <span>
+                            PROJECT ENQUIRY
+                        </span>
+
+                        <h2>
+                            How Can We Help?
+                        </h2>
+
+                        <p>
+                            Fill in the details below and our team
+                            will get back to you.
+                        </p>
+
+                    </div>
+
+
+                    <form id="contactForm"
+                          class="company-contact-form"
+                          novalidate>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="fullName">
+                                    Full Name
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-with-icon">
+
+                                    <i class="bi bi-person"></i>
+
+                                    <input type="text"
+                                           id="fullName"
+                                           name="fullName"
+                                           placeholder="Enter your name"
+                                           required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="companyName">
+                                    Company / Organization
+                                </label>
+
+                                <div class="input-with-icon">
+
+                                    <i class="bi bi-building"></i>
+
+                                    <input type="text"
+                                           id="companyName"
+                                           name="companyName"
+                                           placeholder="Company name">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-with-icon">
+
+                                    <i class="bi bi-envelope"></i>
+
+                                    <input type="email"
+                                           id="email"
+                                           name="email"
+                                           placeholder="you@example.com"
+                                           required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-with-icon">
+
+                                    <i class="bi bi-telephone"></i>
+
+                                    <input type="tel"
+                                           id="phone"
+                                           name="phone"
+                                           placeholder="+91 XXXXX XXXXX"
+                                           required>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Service -->
+
+                        <div class="form-group">
+
+                            <label for="service">
+                                What Do You Need?
+                                <span>*</span>
+                            </label>
+
+                            <div class="input-with-icon select-wrapper">
+
+                                <i class="bi bi-grid"></i>
+
+                                <select id="service"
+                                        name="service"
+                                        required>
+
+                                    <option value="">
+                                        Select a service
+                                    </option>
+
+                                    <option value="website">
+                                        Website Development
+                                    </option>
+
+                                    <option value="web-app">
+                                        Web Application
+                                    </option>
+
+                                    <option value="school-management">
+                                        School Management System
+                                    </option>
+
+                                    <option value="hospital-management">
+                                        Hospital Management System
+                                    </option>
+
+                                    <option value="business-software">
+                                        Business Management Software
+                                    </option>
+
+                                    <option value="mobile-app">
+                                        Mobile Application
+                                    </option>
+
+                                    <option value="cloud">
+                                        Cloud & Hosting
+                                    </option>
+
+                                    <option value="integration">
+                                        API & System Integration
+                                    </option>
+
+                                    <option value="custom">
+                                        Custom Software Solution
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Budget -->
+
+                        <div class="form-group">
+
+                            <label for="budget">
+                                Estimated Budget
+                            </label>
+
+                            <div class="input-with-icon select-wrapper">
+
+                                <i class="bi bi-currency-rupee"></i>
+
+                                <select id="budget"
+                                        name="budget">
+
+                                    <option value="">
+                                        Select budget range
+                                    </option>
+
+                                    <option value="under-25k">
+                                        Under ₹25,000
+                                    </option>
+
+                                    <option value="25k-50k">
+                                        ₹25,000 - ₹50,000
+                                    </option>
+
+                                    <option value="50k-1l">
+                                        ₹50,000 - ₹1,00,000
+                                    </option>
+
+                                    <option value="1l-3l">
+                                        ₹1,00,000 - ₹3,00,000
+                                    </option>
+
+                                    <option value="3l-plus">
+                                        ₹3,00,000+
+                                    </option>
+
+                                    <option value="not-sure">
+                                        Not Sure Yet
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Message -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Tell Us About Your Requirement
+                                <span>*</span>
+                            </label>
+
+                            <div class="input-with-icon textarea-wrapper">
+
+                                <i class="bi bi-chat-left-text"></i>
+
+                                <textarea id="message"
+                                          name="message"
+                                          rows="5"
+                                          placeholder="Tell us about your project, requirements or challenges..."
+                                          required></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <button type="submit"
+                                class="contact-submit-btn">
+
+                            <span>
+                                Send Enquiry
+                            </span>
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+
+                        <p class="form-note">
+
+                            <i class="bi bi-shield-check"></i>
+
+                            Your information is safe with us.
+                            We never share your details.
+
+                        </p>
+
+
+                        <!-- Success -->
+
+                        <div class="form-success-message"
+                             id="formSuccess">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    Thank you!
+                                </strong>
+
+                                <p>
+                                    Your enquiry has been submitted.
+                                    Our team will contact you shortly.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
         </div>
-        <div>
-          <h4>Downloads</h4>
-          <a class="btn btn-outline" href="assets/company_profile.pdf" download>Service Brochure</a>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY CONTACT US
+    ====================================================== -->
+
+    <section class="contact-benefits-section">
+
+        <div class="container">
+
+            <div class="contact-section-heading">
+
+                <span class="section-small-title">
+                    WHY WORK WITH US
+                </span>
+
+                <h2>
+                    More Than Just
+                    <span>Software Development</span>
+                </h2>
+
+                <p>
+                    We work as a technology partner, helping you
+                    from the first idea to long-term support.
+                </p>
+
+            </div>
+
+
+            <div class="contact-benefits-grid">
+
+                <div class="contact-benefit-card">
+
+                    <div class="benefit-number">
+                        01
+                    </div>
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        We first understand your business,
+                        workflow and goals before recommending
+                        a solution.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-benefit-card">
+
+                    <div class="benefit-number">
+                        02
+                    </div>
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+
+                    <h3>
+                        Build
+                    </h3>
+
+                    <p>
+                        Our team develops secure, scalable and
+                        easy-to-use digital solutions tailored
+                        to your organization.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-benefit-card">
+
+                    <div class="benefit-number">
+                        03
+                    </div>
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+
+                    <h3>
+                        Support
+                    </h3>
+
+                    <p>
+                        We stay with you after launch with
+                        maintenance, updates, support and
+                        continuous improvements.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-      <div class="container footer-bottom">
-        <small>© <span id="year"></span> NexaTech IT Solutions. All rights reserved.</small>
-      </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
-    
+
+    </section>
+
+
+    <!-- =====================================================
+         OFFICE / MAP SECTION
+    ====================================================== -->
+
+    <section class="contact-location-section">
+
+        <div class="container">
+
+            <div class="contact-location-wrapper">
+
+                <div class="location-content">
+
+                    <span class="section-small-title">
+                        OUR LOCATION
+                    </span>
+
+                    <h2>
+                        Come Visit
+                        <span>Our Office</span>
+                    </h2>
+
+                    <p>
+                        We'd love to meet you, understand your
+                        requirements and discuss how technology
+                        can help your organization grow.
+                    </p>
+
+
+                    <div class="location-details">
+
+                        <div class="location-detail">
+
+                            <i class="bi bi-geo-alt"></i>
+
+                            <div>
+
+                                <strong>
+                                    Office Address
+                                </strong>
+
+                                <p>
+                                    Your Office Address<br>
+                                    Your City, State<br>
+                                    India
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="location-detail">
+
+                            <i class="bi bi-clock"></i>
+
+                            <div>
+
+                                <strong>
+                                    Working Hours
+                                </strong>
+
+                                <p>
+                                    Monday - Saturday<br>
+                                    10:00 AM - 7:00 PM
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#"
+                       class="location-direction-btn">
+
+                        Get Directions
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Map/image -->
+
+                <div class="location-map">
+
+                    <div class="map-overlay">
+
+                        <div class="map-pin">
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                        </div>
+
+                        <strong>
+                            Your Company
+                        </strong>
+
+                        <span>
+                            Your City, India
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FAQ
+    ====================================================== -->
+
+    <section class="contact-faq-section">
+
+        <div class="container">
+
+            <div class="contact-section-heading">
+
+                <span class="section-small-title">
+                    FAQ
+                </span>
+
+                <h2>
+                    Have Questions?
+                    <span>We've Got Answers.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="contact-faq-list">
+
+
+                <div class="contact-faq-item">
+
+                    <button class="contact-faq-question"
+                            type="button">
+
+                        <span>
+                            What type of software solutions do you provide?
+                        </span>
+
+                        <i class="bi bi-plus"></i>
+
+                    </button>
+
+                    <div class="contact-faq-answer">
+
+                        <p>
+                            We develop websites, web applications,
+                            school management systems, hospital
+                            management systems, business software,
+                            mobile applications, cloud solutions and
+                            custom software based on your requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-faq-item">
+
+                    <button class="contact-faq-question"
+                            type="button">
+
+                        <span>
+                            Can you customize the software according to our workflow?
+                        </span>
+
+                        <i class="bi bi-plus"></i>
+
+                    </button>
+
+                    <div class="contact-faq-answer">
+
+                        <p>
+                            Yes. Our software can be customized according
+                            to your organization's workflow, users,
+                            permissions, reports, integrations and
+                            business requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-faq-item">
+
+                    <button class="contact-faq-question"
+                            type="button">
+
+                        <span>
+                            Do you provide support after the project is completed?
+                        </span>
+
+                        <i class="bi bi-plus"></i>
+
+                    </button>
+
+                    <div class="contact-faq-answer">
+
+                        <p>
+                            Yes. We provide post-launch support,
+                            maintenance, bug fixing, software updates,
+                            hosting support and further enhancements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-faq-item">
+
+                    <button class="contact-faq-question"
+                            type="button">
+
+                        <span>
+                            How do we start a project with you?
+                        </span>
+
+                        <i class="bi bi-plus"></i>
+
+                    </button>
+
+                    <div class="contact-faq-answer">
+
+                        <p>
+                            Simply contact us through the enquiry form,
+                            phone or WhatsApp. We will understand your
+                            requirement, discuss the solution and provide
+                            the next steps.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL CTA
+    ====================================================== -->
+
+    <section class="contact-final-cta">
+
+        <div class="contact-final-overlay"></div>
+
+        <div class="container">
+
+            <div class="contact-final-content">
+
+                <span>
+                    HAVE A PROJECT IN MIND?
+                </span>
+
+                <h2>
+                    Let's Turn Your Idea
+                    Into Reality.
+                </h2>
+
+                <p>
+                    Tell us what you need.
+                    We'll help you figure out the best way forward.
+                </p>
+
+                <a href="#contact-form"
+                   class="contact-final-btn">
+
+                    Talk To Our Team
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <!-- Company -->
+            <div class="footer-column footer-company">
+
+                <a href="index.html" class="footer-logo">
+
+                    <!-- Use your logo -->
+                    <img src="assets/images/NEXA_Tech_logo.png"
+                         alt="Your Company Logo">
+                    <span class="company-name-footer">
+                        Nexa<span>Tech IT</span>
+                    </span>
+                </a>
+
+                <p>
+                    We build reliable digital solutions that help
+                    businesses, schools, hospitals and organizations
+                    work smarter, faster and more efficiently.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Why Choose Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Our Team</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Solutions -->
+            <div class="footer-column">
+
+                <h4>Solutions</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            School Management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Hospital Management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Business Management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Custom Software
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Cloud Solutions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h4>Services</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Website Development
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Web Applications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Mobile Apps
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            API Integration
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Cloud & Hosting
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact strip -->
+
+        <div class="footer-contact">
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-geo-alt"></i>
+                </div>
+
+                <div>
+                    <strong>Address</strong>
+
+                    <p>
+                        Indira Nagar<br>
+                        Lucknow, India
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-telephone"></i>
+                </div>
+
+                <div>
+                    <strong>Contact</strong>
+
+                    <p>
+                        Phone: +91 79785 58021<br>
+                        Email: ts1694626@gmail.com
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-clock"></i>
+                </div>
+
+                <div>
+                    <strong>Business Hours</strong>
+
+                    <p>
+                        Mon - Sat: 10:00 AM - 7:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                <a href="https://nexatechit.com" target="_blank" class="footer-company-link">
+                    © 2026
+                    <strong style="color: rgb(207, 194, 116);">NexaTech IT</strong>.
+                    All Rights Reserved.
+                </a>
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Back to top -->
+
+<a href="#"
+   class="back-to-top">
+
+    <i class="bi bi-arrow-up"></i>
+
+</a>
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>

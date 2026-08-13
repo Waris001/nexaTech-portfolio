@@ -1,129 +1,1675 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nexatech IT Solutions | IT Services & Software Development</title>
-  <meta name="description" content="Nexatech IT Solutions offers IT consulting, software development, web & mobile app development, cloud solutions, and digital transformation services.">
-  <meta name="keywords" content="Nexatech IT Solutions, Software Development, IT Consulting, Web Development, Mobile Apps, Cloud Solutions, Digital Transformation">
-  <meta name="author" content="Nexatech IT Solutions">
-  <meta name="robots" content="about, follow">
-  <link rel="canonical" href="https://nexatechitsolutions.com/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/png" href="assets/images/NEXA_Tech_logo.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexatech IT Solutions | IT Services & Software Development</title>
+    <meta name="description" content="Nexatech IT Solutions offers IT consulting, software development, web & mobile app development, cloud solutions, and digital transformation services.">
+    <meta name="keywords" content="Nexatech IT Solutions, Software Development, IT Consulting, Web Development, Mobile Apps, Cloud Solutions, Digital Transformation">
+    <meta name="author" content="Nexatech IT Solutions">
+    <meta name="robots" content="about, follow">
+    <link rel="canonical" href="https://nexatechitsolutions.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/NEXA_Tech_logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a href="index.html" class="brand">
-          <!-- <span class="brand-logo" aria-hidden="true">𝓝</span> -->
-           <img 
-  src="assets/images/NEXA_Tech_logo.png" 
-  alt="NexaSchool Logo" 
-  class="brand-logo" 
-/>
-          <span class="brand-text">NexaTech IT Solutions</span>
-        </a>
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-        <nav class="site-nav">
-          <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link active">About</a><a href="projects.html" class="nav-link">Projects</a><a href="services.html" class="nav-link">Services</a><a href="contact.html" class="nav-link">Contact</a>
+    <!-- =========================
+     HEADER
+========================= -->
+<header id="header" class="site-header">
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand company-logo">
+
+                <!-- OPTION 1: Image Logo -->
+                <img src="assets/images/NEXA_Tech_logo.png"
+                     alt="Your Company Logo"
+                     class="logo-img">
+
+                <!-- OPTION 2: Text Logo
+                <span class="logo-text">
+                    Nexa<span>Tech.</span>
+                </span>
+                -->
+                <span class="company-name">
+                    Nexa<span>Tech IT</span>
+                </span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+
+                            Solutions
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    School Management System
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Hospital Management System
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Business Management Software
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Custom Software Solutions
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Cloud Solutions
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+
+                            Services
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Website Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Web Applications
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Mobile Applications
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    API & System Integration
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Cloud & Hosting
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    IT Support
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="industries.html">
+                            Industries
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">
+                            Products
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- CTA -->
+                <a href="contact.html" class="header-btn">
+                    Get Started
+                </a>
+
+            </div>
+
         </nav>
-      </div>
-    </header>
-    
-  <main>
-    <section class="section container narrow">
-      <h1 class="page-title">About Us</h1>
-      <p class="lead">
-We are team of Software Engineer's with wealth of experience in delivering complete digital solutions.  <br>
-We help businesses and organizations build modern Websites and Mobile Applications that are fast, secure, and easy to use.
-From designing user-friendly interfaces to developing powerful systems and hosting them on the cloud, I provide end-to-end project delivery tailored to different industries such as Education, Healthcare, Finance, Retail, and NGOs.  <br>
-Our goal is to turn your ideas into reliable, high-quality products that drive real results.
-</p>
-      <div class="about-grid">
-        <div>
-          <h2>Core Skills</h2>
-          <ul class="checklist">
-            <li>✔️ Website Development (Business, E-Commerce, School, NGO, Portfolio, etc.)</li>
-            <li>✔️ Mobile App Development (Android & Cross-Platform)</li>
-            <li>✔️ Cloud Hosting & Deployment (AWS, scalable solutions)</li>
-            <li>✔️ Database Design & Management (Oracle, SQL, secure data handling)</li>
-            <li>✔️ End-to-End Project Delivery (planning, design, development, deployment)</li>
-            <li>✔️ Maintenance & Support (updates, security, performance optimization)</li>
 
-          </ul>
-        </div>
-        <div>
-          <h2>Highlights</h2>
-          <ul class="bullets">
-             <li>Developed complete web and mobile solutions for businesses across different industries.</li>
-             <li>Designed and managed large-scale databases to ensure fast and secure data handling.</li>
-             <li>Created advanced reporting and dashboards to help organizations make better decisions.</li>
-             <li>Guided and collaborated with teams to ensure projects were delivered with high quality and best practices.</li>
+    </div>
 
-          </ul>
+</header>
+
+<main>
+
+    <!-- =========================================================
+         ABOUT HERO
+    ========================================================== -->
+
+    <section class="about-hero">
+        
+        <div class="about-hero-bg"></div>
+
+        <div class="about-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="about-hero-content">
+
+                <span class="about-eyebrow">
+                    <i class="bi bi-buildings"></i>
+                    ABOUT OUR COMPANY
+                </span>
+
+                <h1>
+                    Technology That
+                    <span>Moves Businesses Forward.</span>
+                </h1>
+
+                <p>
+                    We design, develop and deliver reliable digital
+                    solutions that help businesses, schools, hospitals
+                    and organizations work smarter.
+                </p>
+
+                <div class="about-hero-buttons">
+
+                    <a href="#our-story" class="about-btn-primary">
+                        Discover Our Story
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="about-btn-outline">
+                        Talk To Our Team
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-      <a class="btn btn-outline mt-24" href="company_profile.pdf" download>Service Brochure</a>
+
+        <div class="about-hero-bottom">
+
+            <div class="container">
+
+                <div class="about-hero-scroll">
+
+                    <span>Scroll to explore</span>
+
+                    <i class="bi bi-arrow-down"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
-    <section class="section container">
-      <h2 class="section-title">Meet the People Behind NexaTech</h2>
-      <div class="card-grid">
-        <a class="card" >
-          <div class="card-media"><img src="" al<t="Asset Management System" /></div>
-          <div class="card-body">
-            <h3>M Hussain - <em>Founder & CEO</em></h3>
-            <p>Visionary leader driving NexaTech with a passion for innovation, scalable solutions, and customer-centric technology.</p>
-          </div>
-        </a>
-        <a class="card" >
-          <div class="card-media"><img src="assets/images/1765004914258.jpg" alt="E-commerce Microservices" /></div>
-          <div class="card-body">
-            <h3>Pradeep Gupta - <em>Product & Operations Head</em></h3>
-            <p>Bridging technology and business to deliver impactful products.</p>
-          </div>
-        </a>
-        <!-- <a class="card" >
-          <div class="card-media"><img src="assets/images/shantanu.jpeg" alt="Reporting & Analytics" /></div>
-          <div class="card-body">
-            <h3>Shivam Shingh - <em>Technical Architect</em></h3>
-            <p>Specialist in system architecture and performance optimization.</p>
-          </div>
-        </a> -->
-      </div>
+
+
+
+    <!-- =========================================================
+         COMPANY INTRO
+    ========================================================== -->
+
+    <section class="about-intro section-padding" id="our-story">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- Images -->
+                <div class="col-lg-6">
+
+                    <div class="about-image-composition">
+
+                        <div class="about-main-image">
+
+                            <img src="assets/img/about/about-team.jpg"
+                                 alt="Our technology team">
+
+                        </div>
+
+                        <div class="about-small-image">
+
+                            <img src="assets/img/about/about-office.jpg"
+                                 alt="Our modern office">
+
+                        </div>
+
+                        <div class="about-experience-badge">
+
+                            <strong>10+</strong>
+
+                            <span>
+                                Years of<br>
+                                Technology
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Content -->
+                <div class="col-lg-6">
+
+                    <div class="about-section-heading">
+
+                        <span class="about-section-label">
+                            WHO WE ARE
+                        </span>
+
+                        <h2>
+                            We Turn Business
+                            Challenges Into
+                            <span>Digital Solutions.</span>
+                        </h2>
+
+                    </div>
+
+                    <p class="about-lead">
+
+                        We are a technology company focused on building
+                        practical, reliable and scalable digital solutions
+                        for organizations of all sizes.
+
+                    </p>
+
+                    <p>
+
+                        From management software to websites, cloud
+                        infrastructure and system integrations, we help
+                        organizations simplify their everyday operations
+                        through technology.
+
+                    </p>
+
+                    <p>
+
+                        Our approach is simple — understand the real
+                        business problem first, then build technology
+                        that solves it efficiently.
+
+                    </p>
+
+
+                    <div class="about-check-list">
+
+                        <div class="about-check-item">
+
+                            <span>
+                                <i class="bi bi-check-lg"></i>
+                            </span>
+
+                            <div>
+                                <strong>Business-Focused Technology</strong>
+
+                                <p>
+                                    Solutions designed around your actual
+                                    business processes.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-check-item">
+
+                            <span>
+                                <i class="bi bi-check-lg"></i>
+                            </span>
+
+                            <div>
+                                <strong>Reliable & Scalable</strong>
+
+                                <p>
+                                    Systems built to grow with your
+                                    organization.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-check-item">
+
+                            <span>
+                                <i class="bi bi-check-lg"></i>
+                            </span>
+
+                            <div>
+                                <strong>Long-Term Partnership</strong>
+
+                                <p>
+                                    We stay with you beyond the initial
+                                    development.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
-  </main>
-  
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h4>NexaTech IT Solutions</h4>
-          <p><i>Your trusted partner for Web & Mobile app development</i></p>
-          <p class="muted">Based in Noida, India</p>
+
+
+
+    <!-- =========================================================
+         MISSION / VISION
+    ========================================================== -->
+
+    <section class="about-mission-section">
+
+        <div class="about-mission-bg"></div>
+
+        <div class="about-mission-overlay"></div>
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Mission -->
+                <div class="col-lg-6">
+
+                    <div class="about-mission-card">
+
+                        <div class="about-mission-icon">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+
+                        <span>OUR MISSION</span>
+
+                        <h3>
+                            Make Technology
+                            Useful, Accessible
+                            & Impactful.
+                        </h3>
+
+                        <p>
+
+                            Our mission is to make modern technology
+                            practical and accessible for businesses and
+                            organizations that want to improve the way
+                            they operate.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Vision -->
+                <div class="col-lg-6">
+
+                    <div class="about-mission-card">
+
+                        <div class="about-mission-icon">
+                            <i class="bi bi-eye"></i>
+                        </div>
+
+                        <span>OUR VISION</span>
+
+                        <h3>
+                            Build Digital Systems
+                            Businesses Can
+                            Depend On.
+                        </h3>
+
+                        <p>
+
+                            We envision a future where organizations
+                            can manage their operations through
+                            connected, intelligent and easy-to-use
+                            digital systems.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div>
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hussainmdmujtaba695@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Mujtaba," 
-            target="_blank" rel="noopener" style="text-decoration: none">Email Me</a></li>
-            <li><a href="https://www.linkedin.com/in/md-mujtaba-hussain-472993192" target="_blank" rel="noopener" style="text-decoration: none">LinkedIn</a></li>
-            <li><a href="https://github.com/your-github" target="_blank" rel="noopener" style="text-decoration: none">GitHub</a></li>
-            <li><a href="https://wa.me/917978558021" target="_blank" rel="noopener" style="text-decoration: none">WhatsApp</a></li>
-          </ul>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         STATS
+    ========================================================== -->
+
+    <section class="about-stats">
+
+        <div class="container">
+
+            <div class="about-stats-wrapper">
+
+                <div class="about-stat">
+
+                    <strong class="about-counter"
+                            data-target="100">
+                        0
+                    </strong>
+
+                    <span>+</span>
+
+                    <p>
+                        Projects Delivered
+                    </p>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong class="about-counter"
+                            data-target="50">
+                        0
+                    </strong>
+
+                    <span>+</span>
+
+                    <p>
+                        Business Clients
+                    </p>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong class="about-counter"
+                            data-target="15">
+                        0
+                    </strong>
+
+                    <span>+</span>
+
+                    <p>
+                        Software Solutions
+                    </p>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong class="about-counter"
+                            data-target="99">
+                        0
+                    </strong>
+
+                    <span>%</span>
+
+                    <p>
+                        Client Satisfaction
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
-        <div>
-          <h4>Downloads</h4>
-          <a class="btn btn-outline" href="assets/company_profile.pdf" download>Service Brochure</a>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         WHAT WE DO
+    ========================================================== -->
+
+    <section class="about-solutions section-padding">
+
+        <div class="container">
+
+            <div class="about-centered-heading">
+
+                <span class="about-section-label">
+                    WHAT WE DO
+                </span>
+
+                <h2>
+                    One Technology Partner.
+                    <span>Complete Digital Solutions.</span>
+                </h2>
+
+                <p>
+                    From your first website to a complete business
+                    management system, we provide the technology
+                    your organization needs to operate digitally.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 mt-4">
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="about-solution-card">
+
+                        <div class="about-solution-number">
+                            01
+                        </div>
+
+                        <div class="about-solution-icon">
+                            <i class="bi bi-window-stack"></i>
+                        </div>
+
+                        <h3>
+                            Website & Web Applications
+                        </h3>
+
+                        <p>
+                            Professional websites and powerful web
+                            applications designed for performance,
+                            usability and growth.
+                        </p>
+
+                        <a href="#">
+                            Explore Service
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="about-solution-card">
+
+                        <div class="about-solution-number">
+                            02
+                        </div>
+
+                        <div class="about-solution-icon">
+                            <i class="bi bi-grid-1x2"></i>
+                        </div>
+
+                        <h3>
+                            Management Software
+                        </h3>
+
+                        <p>
+                            Smart management systems for schools,
+                            hospitals, businesses and organizations.
+                        </p>
+
+                        <a href="#">
+                            Explore Solutions
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="about-solution-card">
+
+                        <div class="about-solution-number">
+                            03
+                        </div>
+
+                        <div class="about-solution-icon">
+                            <i class="bi bi-cloud-check"></i>
+                        </div>
+
+                        <h3>
+                            Cloud & Infrastructure
+                        </h3>
+
+                        <p>
+                            Secure hosting, cloud deployment, backups
+                            and infrastructure solutions for modern
+                            businesses.
+                        </p>
+
+                        <a href="#">
+                            Explore Services
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="about-solution-card">
+
+                        <div class="about-solution-number">
+                            04
+                        </div>
+
+                        <div class="about-solution-icon">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+
+                        <h3>
+                            API & System Integration
+                        </h3>
+
+                        <p>
+                            Connect your existing systems and services
+                            to create one connected digital ecosystem.
+                        </p>
+
+                        <a href="#">
+                            Explore Integration
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="about-solution-card">
+
+                        <div class="about-solution-number">
+                            05
+                        </div>
+
+                        <div class="about-solution-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+
+                        <h3>
+                            Mobile Applications
+                        </h3>
+
+                        <p>
+                            Mobile-first applications that give your
+                            customers and employees access anywhere.
+                        </p>
+
+                        <a href="#">
+                            Explore Mobile
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="about-solution-card">
+
+                        <div class="about-solution-number">
+                            06
+                        </div>
+
+                        <div class="about-solution-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+
+                        <h3>
+                            Support & Maintenance
+                        </h3>
+
+                        <p>
+                            Continuous support, maintenance and
+                            improvements to keep your technology
+                            running smoothly.
+                        </p>
+
+                        <a href="#">
+                            Get Support
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-      <div class="container footer-bottom">
-        <small>© <span id="year"></span> NexaTech IT Solutions. All rights reserved.</small>
-      </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
-    
+
+    </section>
+
+
+
+    <!-- =========================================================
+         WHY CHOOSE US
+    ========================================================== -->
+
+    <section class="about-why">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="about-why-image">
+
+                        <img src="assets/img/about/about-developer.jpg"
+                             alt="Developer working on technology">
+
+                        <div class="about-floating-card">
+
+                            <div class="about-floating-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Built With Confidence
+                                </strong>
+
+                                <span>
+                                    Secure. Reliable. Scalable.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="about-section-heading">
+
+                        <span class="about-section-label">
+                            WHY CHOOSE US
+                        </span>
+
+                        <h2>
+                            Technology Is Easy.
+                            <span>Building The Right Technology Isn't.</span>
+                        </h2>
+
+                    </div>
+
+                    <p class="about-lead">
+
+                        We don't believe in building software simply
+                        because technology is available. We build it
+                        because it solves a real problem.
+
+                    </p>
+
+
+                    <div class="about-benefit">
+
+                        <div class="about-benefit-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Understand Before We Build
+                            </h4>
+
+                            <p>
+                                We study your workflow and requirements
+                                before deciding what technology should
+                                be used.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-benefit">
+
+                        <div class="about-benefit-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Clean & Maintainable Systems
+                            </h4>
+
+                            <p>
+                                Our solutions are designed to remain
+                                maintainable and adaptable as your
+                                business grows.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-benefit">
+
+                        <div class="about-benefit-icon">
+                            <i class="bi bi-life-preserver"></i>
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Support Beyond Delivery
+                            </h4>
+
+                            <p>
+                                Our relationship doesn't end when the
+                                project goes live. We provide ongoing
+                                assistance and improvements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         OUR APPROACH
+    ========================================================== -->
+
+    <section class="about-process section-padding">
+
+        <div class="container">
+
+            <div class="about-centered-heading">
+
+                <span class="about-section-label">
+                    OUR APPROACH
+                </span>
+
+                <h2>
+                    From Idea To
+                    <span>Working Solution.</span>
+                </h2>
+
+                <p>
+                    A simple and transparent process that keeps your
+                    project focused from beginning to launch.
+                </p>
+
+            </div>
+
+
+            <div class="about-process-grid">
+
+                <div class="about-process-line"></div>
+
+
+                <div class="about-process-item">
+
+                    <div class="about-process-number">
+                        01
+                    </div>
+
+                    <div class="about-process-content">
+
+                        <span>
+                            DISCOVER
+                        </span>
+
+                        <h3>
+                            Understand
+                        </h3>
+
+                        <p>
+                            We understand your business, challenges,
+                            users and goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-process-item">
+
+                    <div class="about-process-number">
+                        02
+                    </div>
+
+                    <div class="about-process-content">
+
+                        <span>
+                            PLAN
+                        </span>
+
+                        <h3>
+                            Design
+                        </h3>
+
+                        <p>
+                            We create the right technology strategy,
+                            architecture and user experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-process-item">
+
+                    <div class="about-process-number">
+                        03
+                    </div>
+
+                    <div class="about-process-content">
+
+                        <span>
+                            BUILD
+                        </span>
+
+                        <h3>
+                            Develop
+                        </h3>
+
+                        <p>
+                            Our team develops, integrates and tests
+                            your solution.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-process-item">
+
+                    <div class="about-process-number">
+                        04
+                    </div>
+
+                    <div class="about-process-content">
+
+                        <span>
+                            GROW
+                        </span>
+
+                        <h3>
+                            Support
+                        </h3>
+
+                        <p>
+                            We monitor, maintain and improve your
+                            solution as your needs evolve.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         TEAM
+    ========================================================== -->
+
+    <section class="about-team-section">
+
+        <div class="container">
+
+            <div class="row align-items-end mb-5">
+
+                <div class="col-lg-7">
+
+                    <div class="about-section-heading">
+
+                        <span class="about-section-label">
+                            OUR PEOPLE
+                        </span>
+
+                        <h2>
+                            The People Behind
+                            <span>The Technology.</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <p class="about-team-intro">
+
+                        Great software is built by people who understand
+                        technology, business and the people who use it.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Person -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="about-team-card">
+
+                        <div class="about-team-image">
+
+                            <img src="assets/images/CEO.png"
+                                 alt="Founder and CEO">
+
+                            <div class="about-team-social">
+
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <h3>
+                                Md Mujtaba Hussain
+                            </h3>
+
+                            <span>
+                                Founder & CEO
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Person -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="about-team-card">
+
+                        <div class="about-team-image">
+
+                            <img src="assets/img/team/team-2.jpg"
+                                 alt="Technology Lead">
+
+                            <div class="about-team-social">
+
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <h3>
+                                Team Member
+                            </h3>
+
+                            <span>
+                                Technology Lead
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Person -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="about-team-card">
+
+                        <div class="about-team-image">
+
+                            <img src="assets/img/team/team-3.jpg"
+                                 alt="Software Developer">
+
+                            <div class="about-team-social">
+
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <h3>
+                                Team Member
+                            </h3>
+
+                            <span>
+                                Software Developer
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Person -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="about-team-card">
+
+                        <div class="about-team-image">
+
+                            <img src="assets/img/team/team-4.jpg"
+                                 alt="Project Manager">
+
+                            <div class="about-team-social">
+
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <h3>
+                                Team Member
+                            </h3>
+
+                            <span>
+                                Project Manager
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         CTA
+    ========================================================== -->
+
+    <section class="about-cta">
+
+        <div class="about-cta-bg"></div>
+
+        <div class="about-cta-overlay"></div>
+
+        <div class="container">
+
+            <div class="about-cta-content">
+
+                <span class="about-section-label">
+                    LET'S BUILD SOMETHING BETTER
+                </span>
+
+                <h2>
+                    Have A Business Challenge?
+                    <span>Let's Solve It Together.</span>
+                </h2>
+
+                <p>
+                    Whether you need a website, management software,
+                    cloud solution or complete digital transformation,
+                    our team is ready to help.
+                </p>
+
+                <div class="about-cta-buttons">
+
+                    <a href="contact.html"
+                       class="about-btn-primary">
+
+                        Start A Conversation
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                    <a href="tel:+910000000000"
+                       class="about-btn-light">
+
+                        <i class="bi bi-telephone"></i>
+
+                        Talk To Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <!-- Company -->
+            <div class="footer-column footer-company">
+
+                <a href="index.html" class="footer-logo">
+
+                    <!-- Use your logo -->
+                    <img src="assets/images/NEXA_Tech_logo.png"
+                         alt="Your Company Logo">
+                    <span class="company-name-footer">
+                        Nexa<span>Tech IT</span>
+                    </span>
+                </a>
+
+                <p>
+                    We build reliable digital solutions that help
+                    businesses, schools, hospitals and organizations
+                    work smarter, faster and more efficiently.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Why Choose Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Our Team</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Solutions -->
+            <div class="footer-column">
+
+                <h4>Solutions</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            School Management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Hospital Management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Business Management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Custom Software
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Cloud Solutions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h4>Services</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Website Development
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Web Applications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Mobile Apps
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            API Integration
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Cloud & Hosting
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact strip -->
+
+        <div class="footer-contact">
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-geo-alt"></i>
+                </div>
+
+                <div>
+                    <strong>Address</strong>
+
+                    <p>
+                        Indira Nagar<br>
+                        Lucknow, India
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-telephone"></i>
+                </div>
+
+                <div>
+                    <strong>Contact</strong>
+
+                    <p>
+                        Phone: +91 79785 58021<br>
+                        Email: ts1694626@gmail.com
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-clock"></i>
+                </div>
+
+                <div>
+                    <strong>Business Hours</strong>
+
+                    <p>
+                        Mon - Sat: 10:00 AM - 7:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                <a href="https://nexatechit.com" target="_blank" class="footer-company-link">
+                    © 2026
+                    <strong style="color: rgb(207, 194, 116);">NexaTech IT</strong>.
+                    All Rights Reserved.
+                </a>
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Back to top -->
+
+<a href="#"
+   class="back-to-top">
+
+    <i class="bi bi-arrow-up"></i>
+
+</a>
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
