@@ -2821,7 +2821,7 @@
     inset: 0;
 
     background-image:
-        url("../images/gym.jpg");
+        url("../images/bg/7.jpg");
 
     background-size: cover;
 
@@ -3661,7 +3661,7 @@
 .about-why-image {
 
     position: relative;
-
+    
     padding-right: 35px;
 
     padding-bottom: 30px;
@@ -3680,6 +3680,10 @@
 
     box-shadow:
         0 25px 60px rgba(10,50,50,0.15);
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    object-position: center;
 }
 
 
@@ -4114,7 +4118,7 @@
 
     padding: 120px 0;
 
-    background: #0c4545;
+    background: #198181;
 }
 
 
@@ -4125,7 +4129,7 @@
     inset: 0;
 
     background-image:
-        url("../img/about/about-cta.jpg");
+        url("../images/bg/3.jpg");
 
     background-size: cover;
 
@@ -6400,7 +6404,7 @@
     overflow: hidden;
 
     background-image:
-        url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=90");
+        url("../images/bg/5.jpg");
 
     background-size: cover;
 
@@ -7311,7 +7315,7 @@
 
 .feature-link-light:hover {
 
-    color: #b5eeeb;
+    color: #bdebe9;
 }
 
 
@@ -7321,7 +7325,7 @@
 
 .business-industry {
 
-    background: #f5fbfa;
+    background: #cff6ef;
 }
 
 .business-solution-grid {
@@ -12115,4 +12119,12 @@
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
     }
+}
+
+#mobile-applications {
+    background-color: #075f5b;
+}
+
+#mobile-applications p {
+    color: wheat;
 }
