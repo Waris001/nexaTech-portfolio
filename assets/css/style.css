@@ -61,6 +61,12 @@
 .company-name span {
     color: #8ee5df;
 }
+.company-name sup {
+    color: #d4af37;
+    font-size: 0.6em;
+    line-height: 0;
+    vertical-align: super;
+}
 .company-name-footer {
   
     color: #7cc4bf;
